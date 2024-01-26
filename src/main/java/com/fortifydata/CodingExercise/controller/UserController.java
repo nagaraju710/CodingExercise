@@ -23,6 +23,7 @@ public class UserController {
 
     @PatchMapping("/save")
     public IpAddress save(@RequestParam String email) {
+        // TODO: validate email pattern
         return ipAddressService.save(email);
     }
 }
